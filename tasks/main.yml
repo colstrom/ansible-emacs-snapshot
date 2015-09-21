@@ -1,0 +1,7 @@
+---
+- apt:
+    pkg: "{{ item }}"
+    state: latest
+  with_items:
+  - emacs-snapshot-el
+  - emacs-snapshot-nox
